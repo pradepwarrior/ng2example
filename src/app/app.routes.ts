@@ -1,3 +1,4 @@
+//adding app.routes.ts file for routing url
 import { Routes } from '@angular/router';
 import{DashboardComponent} from './dashboard/dashboard.component'
 import{SidebarComponent} from './sidebar/sidebar.component'
