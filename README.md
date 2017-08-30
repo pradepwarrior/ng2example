@@ -1,6 +1,5 @@
 # Angular2 with simple example
 
-Set up.
 
 Make sure you have angular cli installed.
 
