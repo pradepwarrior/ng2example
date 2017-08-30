@@ -1,12 +1,27 @@
-<div class="content-wrapper">
-    <div class="container-fluid">
-      <ol class="breadcrumb" style=" margin-top: 4%;">
-        <li class="breadcrumb-item">
-          <a href="#">User</a>
-        </li>
-        <li class="breadcrumb-item active">User details</li>
-      </ol>
-    </div>
-    <div>
+<div class="content-wrapper" style=" margin-top: 4%;">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="#">User</a>
+      </li>
+      <li class="breadcrumb-item active">User details</li>
+    </ol>
+  </div>
+  <div class="container-fluid">
+    <h2>Submit Form</h2>
+    <br>
+    <div class="container">
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" [value]="myname" style="margin-left: 31px;">
+      <strong [innerHTML]="innerhtmlValue"></strong>
+      <br>
+      <label><b>Password</b></label>
+      <input type="text"  [(ngModel)]="profile" placeholder="Enter Password" /> 
+            {{profile}}
+      <br>
+      <div class="clearfix">
+        <button type="button" (click)="submit()">submit</button>
+      </div>
     </div>
   </div>
+</div>

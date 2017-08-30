@@ -8,6 +8,8 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserComponent } from './user/user.component';
 
+import { FormsModule } from '@angular/forms';
+import{HttpModule} from '@angular/http';
 //adding for routes
 import { Approutes } from './app.routes';
 import{ RouterModule} from '@angular/router';
@@ -23,7 +25,9 @@ import{ RouterModule} from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(Approutes) //adding for routes
+    RouterModule.forRoot(Approutes), //adding for routes
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
