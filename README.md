@@ -1,1 +1,1 @@
-# NAngular2 with simple example
+# Angular2 with simple example
